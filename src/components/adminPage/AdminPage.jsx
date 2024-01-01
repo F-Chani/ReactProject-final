@@ -8,15 +8,17 @@ function AdminPage() {
     return (
         <>
             <AdminDetails />
+            <div className="button">
             <br />
             <Button>   <Link to="./meeting">Meeting</Link> </Button>
             <br />
             <Button> <Link to="./services" > services</Link> </Button>
             <br />
+            
             <Outlet />
+            </div>
         </>
     )
 
 }
-console.log("adminpage")
 export default AdminPage

@@ -63,10 +63,7 @@ class Store {
       },
     });
     const x = await response1.json();
-    console.log('after get')
     AdminData.services = ([...x])
-    console.log(x)
-
   }
 
 }

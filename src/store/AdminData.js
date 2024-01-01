@@ -24,14 +24,14 @@ class AdminData {
          name: "פגישת ייעוץ פרונטלית",
          description: "פגישת ייעוץ פרטנית בקליניקה",
          price: 500,
-         duration: 60,
+         during: 60,
       },
       {
          id: "12",
          name: "בלהבלהבלהבלה",
          description: "פגישת ייעוץ פרטנית בקליניקה",
          price: 200,
-         duration: 5,
+         during: 5,
       }
    ]
    isLogin = false;//נכנס כמנהל

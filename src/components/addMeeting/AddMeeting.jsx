@@ -15,7 +15,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import Modal from 'react-modal';
 import Appointment from '../../store/Appointment';
-import dayjs from 'dayjs';
+// import dayjs from 'dayjs';
 import MyDatePicker from "../MyDataPicker";
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';

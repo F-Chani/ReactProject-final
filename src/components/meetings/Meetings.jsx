@@ -35,15 +35,15 @@ const Meetings = (observer(() => {
       </div>
       <div className="meetings-list">
 
-        <div className="meet">
+        {/* <div className="meet"> */}
           <ul>
             {Appointment.meetingsList.map((meeting, key) => (
               <li key={key} className="service-item" >
                 <h2> serviceName: {meeting.serviceName}</h2>
                 <p>  serviceDescribtion:{meeting.serviceDescribtion}</p>
                 {/* <p>date: {meeting.dateTime} </p> */}
-                <p className={validDate(meeting.dateTime)}>
-                  {meeting.dateTime}</p>
+                <p  className={validDate(meeting.dateTime)}>
+                serviceDate: {meeting.dateTime}</p>
                 <p>clientName:{meeting.clientName}</p>
                 <p>clientPhone: {meeting.clientPhone}</p>
                 <p>clientEmail: {meeting.clientEmail}</p>
@@ -51,7 +51,7 @@ const Meetings = (observer(() => {
               </li>
             ))}
           </ul>
-        </div>
+        {/* </div> */}
 
 
 

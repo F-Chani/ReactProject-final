@@ -29,30 +29,32 @@ export default function Login() {
   console.log(password)
   console.log(name)
 
-  
+
   useEffect(() => {
-    if(localStorage.getItem("isLogin")==="true")
+    if (localStorage.getItem("isLogin") === "true")
       AdminData.setIsLogin(true);
   }, [])
   const handleLogin = async () => {
     console.log('login');
 
-    const response = await fetch("http://localhost:8787/login", {// כתיבה עם fetch
-      method: "POST",
-      body: JSON.stringify({
-        name, password
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch("http://localhost:8787/login",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          name, password
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
     console.log(response.statusText)
 
     if (response.status === 200) {
       setName("")
       setPassword("")
-localStorage.setItem("isLogin",true);
-AdminData.setIsLogin(true)    }
+      localStorage.setItem("isLogin", true);
+      AdminData.setIsLogin(true)
+    }
     else {
       setName("")
       setPassword("")
@@ -61,7 +63,6 @@ AdminData.setIsLogin(true)    }
   }
   return (
     <>
-      <h1>Login</h1>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: "column" }}>
         <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">name</InputLabel>

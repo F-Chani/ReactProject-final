@@ -16,10 +16,10 @@ const Services=(observer(()=> {
   <ul>
     {AdminData.services.map(service => (
       <li key={service.id} className="service-item">
-        <h2> :שם השרות{service.name}</h2>
-        <p> תאור:{service.description}</p>
-        <p>מחיר: {service.price}</p>
-        <p>משך זמן: {service.duration} </p>
+        <h2>  שם השרות: {service.name}</h2>
+        <p> תאור השירות: {service.description} </p>
+        <p> {service.price} :מחיר</p>
+        <p> {service.during} :משך זמן השירות</p>
       </li>
     ))}
   </ul>

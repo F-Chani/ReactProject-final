@@ -8,6 +8,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import AdminData from '../../store/AdminData';
 import Store from '../../store/Store';
 import { observer } from "mobx-react"
+import bina from "../../assets/images/bina.jpg";
 
 const EditAdminDetails = (observer(() => {
   const [Id, setId] = useState(AdminData.business.id);
@@ -34,12 +35,13 @@ const EditAdminDetails = (observer(() => {
       <h1>sendToEdit</h1>
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
+        <CardMedia
+          component="img"
+          height="140"
+          image={bina}
+          src={bina}
+          alt="AI"
+        />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               <input type='text' placeholder={" :מספר עסק"} onChange={(e) => setId(e.target.value)} />

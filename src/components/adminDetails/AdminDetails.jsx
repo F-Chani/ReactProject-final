@@ -9,17 +9,9 @@ import AdminData from '../../store/AdminData';
 import {observer} from "mobx-react"
 import Store from '../../store/Store';
 import { useEffect } from 'react';
-
+import bina from "../../assets/images/bina.jpg";
 import EditAdminDetails from '../editAdminDetails/EditAdminDetails';
 const AdminDetails =(observer(()=>{
-  
-  // const[Id,setId]=useState('');
-  // const[Name,setName]=useState('');
-  // const[Adress,setAdress]=useState('');
-  // const[Phon,setPhon]=useState('');
-  // const[Owner,setOwner]=useState('');
-  // const[Logo,setLogo]=useState('');
-  // const[Description,setDescription]=useState('');
   useEffect(()=>{
     async function fetchData() {
           Store.getDetalise();
@@ -38,8 +30,9 @@ const AdminDetails =(observer(()=>{
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          image={bina}
+          src={bina}
+          alt="AI"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

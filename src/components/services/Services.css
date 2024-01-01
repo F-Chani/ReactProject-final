@@ -1,31 +1,29 @@
-/* קובץ CSS */
-.services-container {
-    max-width: 800px;
-    margin: 0 auto;
+
+ .service-item {
+    background-color: #f9f9f9;
+    border: 2px solid #3498db;
+    margin: 20px 0;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
   
-  h1 {
-    color: #333;
+  .service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
+  .service-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3498db;
   }
   
-  .service-item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .service-item p {
+    margin: 8px 0;
+    color: #555;
   }
   
-  h2 {
-    color: #007bff;
-  }
   
-  /* ניתן להוסיף עיצוב נוסף כפי שרואים לך */
   
